@@ -1,0 +1,124 @@
+/*---------------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+ 
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*---------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+    background-image: linear-gradient(to bottom, #5cc6ff, #e0f9ff);
+    height: 100vh;
+}
+
+
+/*---------------------------------------------*/
+/*CALCULATOR SECTION*/
+/*---------------------------------------------*/
+.calculator {
+    margin: 130px auto;
+    max-width: 380px;
+    padding: 20px;
+    border: none;
+    border-radius: 2%;
+    background-image: linear-gradient(to bottom, #d1d1d1, #a8a8a8);
+    box-shadow: 1px 1px 10px;
+}
+
+.screen {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+.screen:focus {
+    border: 2px solid #222;
+}
+
+.calc-row {
+    width: 100%;
+    margin: 20px 0;
+}
+.calc-row:last-child {
+    margin-bottom: 0;
+}
+
+.btn {
+    width: 51px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.num,
+.zero,
+.com {
+    background-color: #e8e8e8;
+    border: 1px solid #afafaf;
+}
+
+.num:hover,
+.zero:hover,
+.com:hover {
+    background-color: #cecece;
+    border: 1px solid #7e7e7e;
+}
+
+.sign {
+    background-color: #d0d0d0;
+    border: 1px solid #afafaf;
+}
+
+.sign:hover {
+    background-color: #bebebe;
+    border: 1px solid #959595;
+}
+
+.equal {
+    background-color: #0086db;
+    border: none;
+}
+
+.equal:hover {
+    background-color: #007ac7;
+}
